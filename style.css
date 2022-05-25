@@ -1,12 +1,6 @@
-/*
-cores
-#FFFFFF: branco
-#9767A9: roxo escuro
-#707070: marron
-#AC95BB: lilas
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;800&display=swap');
 
-estilos de fonte
-*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     margin: 0;
@@ -16,34 +10,43 @@ estilos de fonte
 
 header{
     margin: 0 auto;
-    width: 100vw;
-    height: 55.5vh;
     max-width: 1080px;
-    background-image: url("img/web/cabeludo@2x.png");
     align-items: center;
-    border: 2px solid blue;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    /*
+    position: relative;*/
+}
+.menu-flex{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
 }
 .container-topo{
+    align-items: center;
+    border: 2px solid black;
     width: 100%;
-    height: 80px;
+    height: 60px;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
     background-color: white;
-    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo-cachos img{
+    width: 60%;
+    object-fit: cover;
+    margin-left: 40px;
 }
 .container-menu{
     width: 50%;
-    align-items: center; 
+    font-size: 0.4rem;
+    justify-content: space-between;
 }
+
 .container-menu ul{
-    border: 2px solid red;
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .container-menu a{
     text-decoration: none;
@@ -54,38 +57,73 @@ header{
     font-weight: bold;
 }
 .container-form{
-    border: 2px solid red;
-    width: 19%;
+    width: 20%;
     height: 35px;
     display: flex;
 }
 .container-form img{
-    border: 2px solid brown;
-    position: relative;
-    left: 82%;
-    top: 15%;
+    position: absolute;
+    right: 36%;
+    top: 3%;
     z-index: 1;
 }
 .container-form input{
     border: 2px solid #9767A9;
     border-radius: 25px;
+    width: 100%;
     position: relative;
-    bottom: 100%;
-    height: 35px;
+    top: 0%;
+    height: 30px;
 }
 .container-form ::placeholder{
     color: #9767A9;
+    align-items: flex-end;
 }
+
 .social-media{
-    border: 2px solid black;
-    width: 13%;
+    width: 9%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.social-media img{
+    height: 25px;
+    object-fit: cover;
 }
 .social-media figure:hover{
     cursor: pointer;
     background-color: #e9dff0;
 }
+.img-cabeludo{
+    position: relative;
+}
+.img-cabeludo img{
+    object-fit: cover;
+    width: 1080px;
+    display: flex;
+}
+.img-cabeludo h1{
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    width: 30%;
+    color: white;
+    font-size: 3.5rem;
+    line-height: 3rem;
+    position: absolute;
+    bottom: 30%;
+    left: 15%;
+}
+.img-cabeludo p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    position: absolute;
+    width:  23%;
+    color: white;
+    text-align:left;
+    font-size: 1.2rem;
+    bottom: 35%;
+    right: 17%;
+}
+@media(max-width: ){
 
-
+}
