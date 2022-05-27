@@ -8,10 +8,10 @@
     box-sizing: border-box;
 }
 
-header{
+body{
     margin: 0 auto;
     max-width: 1080px;
-    width: 100vw;
+    width: 100%;
     align-items: center;
 }
 .menu-flex{
@@ -222,6 +222,81 @@ header{
     .img-cabeludo p{
         font-size: 0.8rem;
         width: 45%;
-        top: 50%;
+        top: 54%;
     }
+}
+.crespos-text{
+    padding: 3vh 7vw 5vh 7vw;
+    background-color: #9767A9;
+    color: white;
+    display: flex;
+}
+.crespos-text h2{
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-size: 2rem;
+    width: 58%;
+    padding-right: 1vw;
+}
+.text{
+    flex-direction: column;
+    width: 42%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 0.7rem;
+    line-height: 1rem;
+    padding-left: 1vw;
+}
+@media(max-width: 1005px){
+    .crespos-text h2{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width: 830px){
+    .crespos-text{
+        flex-direction: column;
+    }
+    .crespos-text h2{
+        width: 100%;
+        padding: 2%;
+    }
+    .text{
+        width: 100%;
+    }
+    .text p{
+        padding: 2%;
+    }
+}
+@media(max-width: 450px){
+    .crespos-text h2{
+        font-size: 1rem;
+    }
+}
+.texto-principal{
+    padding: 2vh 7vw;
+}
+.texto-principal img{
+    width: 50%;
+    object-fit: contain;
+}
+
+.texto-principal h3{
+    font-family:  'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: white;
+}
+.texto-principal p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 0.7rem;
+    color: white;
+}
+.dicas{
+    width: 35%;
+    background-color: #9767A9;
+}
+
+.img-cacho-fio{
+    width: 25%;
+    background-color: #9767A9;
 }
