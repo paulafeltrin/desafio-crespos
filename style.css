@@ -272,9 +272,24 @@ body{
         font-size: 1rem;
     }
 }
+main{
+    border: 2px solid red;
+    position: relative;
+}
+/* .galery-dicas{
+    margin: 0 auto;
+    max-width: 1080px;
+    width: 100%;
+    align-items: center;
 
+    display: flex;
+    border: 2px solid black;
+    flex-direction: column;
+
+} */
 .texto-principal{
     background-color: bisque;
+    border: 2px solid green;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -304,25 +319,25 @@ body{
 }
 .dica-01{
     padding: 1.5vh 1.5vw;
-    width: 60%;
+    width: 70%;
     background-color: #9767A9;
     position: relative;
-    bottom: 9vw;
-    left: 10vh;
+    bottom: 15vh;
+    left: 5vw;
 }
 .img-dica-02{
     position: relative;
     left: 1vw;
-    top: 25vh;
+    top: 20vh;
     width: 35vw;
 }
 .dica-02{
     padding: 2vh 2vw;
-    width: 60%;
+    width: 63%;
     background-color: #9767A9;
     position: relative;
     bottom: 8.5vw;
-    left: 10vh;
+    left: 7vh;
 }
 .img-dica-03{
     position: relative;
@@ -381,10 +396,11 @@ body{
     left: 10vh;
 }
 .img-dica-07{
+    height: 80vh;
     position: relative;
     left: 1vw;
     bottom: 29vh;
-    width: 35vw;
+    width: 34vw;
 }
 .dica-07{
     padding: 2vh 2vw;
@@ -399,7 +415,126 @@ body{
     left: 1vw;
     top: 10vh;
     width: 35vw;
+    height: 15vh;
+    align-items: baseline;
 }
+@media(max-width: 830px){
+    .texto-principal{
+        flex-direction: column;
+    }
+    .texto-principal img{
+        position: static;
+        border: 2px solid;
+        top: 0px;
+    }
+    .texto-principal p{
+        padding: 0.3rem;
+    }
+    .img-dica-01{
+        position: static;
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+    .dica-01{
+        padding: 1.5vh 1.5vw;
+        width: 80%;
+        background-color: #9767A9;
+        position: static;
+    }
+    .img-dica-02{
+        position: static;
+        width: 70vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .dica-02{
+        padding: 1.5vh 1.5vw;
+        width: 70vw;
+        background-color: #9767A9;
+        position: static;
+    }
+    .img-dica-03{
+        position: static;
+        width: 70vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .dica-03{
+        padding: 1.5vh 1.5vw;
+        width: 70vw;
+        background-color: #9767A9;
+        position: static;
+    }
+    .img-dica-04{
+        position: static;
+        width: 70vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .dica-04{
+        padding: 1.5vh 1.5vw;
+        width: 70vw;
+        background-color: #9767A9;
+        position: static;
+    }
+    .img-dica-05{
+        position: static;
+        width: 70vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .dica-05{
+        padding: 1.5vh 1.5vw;
+        width: 70vw;
+        background-color: #9767A9;
+        position: static;
+    }
+    .img-dica-06{
+        position: static;
+        width: 70vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .dica-06{
+        padding: 1.5vh 1.5vw;
+        width: 70vw;
+        background-color: #9767A9;
+        position: static;
+    }
+    .img-dica-07{
+        position: static;
+        width: 70vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .dica-07{
+        padding: 1.5vh 1.5vw;
+        width: 70vw;
+        background-color: #9767A9;
+        position: static;
+    }
+    .img-cacho-fio{
+        position: static;
+        width: 40vw;
+        /* display: block; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+
+
 .images-power img{
     width: 25%;
 }
