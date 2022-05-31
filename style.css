@@ -546,16 +546,21 @@ main{
         position: relative;
         top: 0vh;
     }
-
 }
 .gallery-web{
     margin: 0 auto;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    padding-bottom: 2vh;
 }
-.gallery img{
-    padding: 5vh 10vw;
+.gallery-web img{
+    padding: 1vh 1vw;
+}
+.gallery-web img:hover{
+    border: 1px solid black;
+    cursor: pointer;
+    transform: scale(1.2);
 }
 .gallery-52{
     width: 20vw;
@@ -587,6 +592,8 @@ main{
 .gallery-09{
     width: 13vw;
 }
+
+
 .gallery-mobile{
     display: none;
 }
@@ -602,9 +609,6 @@ main{
         justify-content: space-evenly;
     }
 }
-
-
-
 
 .footer-web{
     background: #9767A9;
