@@ -549,6 +549,58 @@ main{
         top: 0vh;
     }
 }
+.container-gallery-mobile{
+    display: inline;
+}
+.gallery-img{
+    display: inline;
+    width: 45vw;
+}
+.gallery-img-2{
+    padding: 0vh 2vw;
+    display: flex;
+    width:  100vw;
+}
+.gallery-img-2 img{
+    padding: 2vh 2vw;
+}
+.gallery-52{
+    width: 45vw;
+}
+.gallery-54{
+    width: 17vw;
+}
+.gallery-53{
+    width: 20vw;
+}
+.gallery-14{
+    width: 45vw;
+}
+.gallery-gm{
+    width: 100%;
+}
+.gallery-sd{
+    width: 20vw;
+}
+.gallery-10{
+    width: 20vw;
+}
+.gallery-12{
+    width: 20vw;
+}
+.gallery-09{
+    width: 20vw;
+}
+.gallery-11{
+    width: 45vw;
+}
+               
+               
+                
+               
+               
+
+
 /* }
 .container-fist{
     flex-direction: column;
@@ -590,23 +642,27 @@ main{
 .copy-9{
     width: 50%;
 } */
-.container-gallery{
+/* .container-gallery{
     border: 2px solid red;
     display: flex;
+    justify-content: space-between;
+    padding: 0vh 0vw;
+    flex-wrap: wrap; */
     /* flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 2vw; */
     /* padding: 0 5vw; */
     /* height: 89vh; */
-}
+/* }
 .gallery-10{
     border: 2px solid black;
-    width: 20vw;
+    width: 15vw;
 }
 .gallery-5{
     border: 2px solid green;
-    width: 13vw;
-}
+    width: 10vw;
+} */
+/* }
 .container-fist{
     border: 2px solid violet;
     flex-direction: column;
@@ -618,9 +674,9 @@ main{
     flex-direction: column;
 }
 .container-tird{
-    width: 15%;
+    width: 15%; */
     /* height: 50vh; */
-    border: 2px solid yellow;
+    /* border: 2px solid yellow;
 }
 .container-four{
     width: 26%;
@@ -629,7 +685,7 @@ main{
 .container-five{
     border: 2px solid brown;
     width: 15%;
-}
+} */
 /* }
 .gallery{
     width: 340px;
@@ -640,4 +696,50 @@ main{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+
+.footer-web{
+    background: #9767A9;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 2vh 4vw;
+    
+}
+.copyright{
+    font-style: 'Montserrat', sans-serif;
+    font-size: 0.6rem;
+    width: 55vw;
+}
+.pg{
+    display: flex;
+    justify-content: center;
+    width: 7vw;
+}
+.pg img{
+    width: 2vw;
+}
+.pg p{
+    width: 4vw;
+    font-size: 0.7rem;
+    font-style: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+.pages :hover{
+    cursor: pointer;
+    background-color: white;
+    color: #9767A9;
+    opacity: 0.5;
+}
+.pages{
+    display: flex;
+}
+@media(max-width: 1030px){
+    .copyright{
+        width: 60vw;
+    }
+    .pg{
+        width: 11vw;
+    }
 }
