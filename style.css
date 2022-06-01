@@ -285,7 +285,6 @@ body{
     padding: 0 2vw 2vh 2vw;
 }
 .texto-principal{
-    background-color: bisque;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -297,13 +296,13 @@ body{
 }
 .texto-principal h3{
     font-family: 'Playfair Display', serif;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: white;
 }
 .texto-principal p{
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     color: white;
 }
 
@@ -408,7 +407,7 @@ body{
 }
 .img-cacho-fio{
     position: relative;
-    width: 40%;
+    width: 35%;
     top: 10vh;
     left: 6vw;
     height: 15vh;
@@ -538,8 +537,9 @@ body{
         position: static;
     }
     .img-cacho-fio{
-        left: 25%;
-        top: 0vh;
+        left: 30%;
+        top: 10vh;
+        width: 40%;
     }
 }
 @media(max-width: 770px){
@@ -669,9 +669,9 @@ body{
     color: white;
     padding: 4vh 6vw;
 }
-.copyright{
+.copyright p{
     font-style: 'Montserrat', sans-serif;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     width: 55vw;
 }
 .pg{
@@ -723,15 +723,16 @@ body{
         color: black;
         line-height: 1rem;
     }
-    .copyright{
+    .copiright p{
         width: 100vw;
-    }
-    .copyright p{
-        font-size: 0.9rem;
     }
 }
 .footer-mobile{
     display: none;
+}
+footer{
+    font-style: 'Montserrat', sans-serif;
+    border: 2px solid #AC95BB;
 }
 h4{
     display: none;
@@ -741,6 +742,23 @@ h4{
         display: flex;
         padding: 2vh 0 2vh 0;
         justify-content: space-around;
+        border: 1px solid #AC95BB;
+    }
+    .footer-web{
+        width: 100%;
+        background-color: #ede2f4;
+        font-style: 'Montserrat', sans-serif;
+    }
+    .copyright h4{
+        padding-bottom: 5px;
+        display: flex;
+        width: 100%;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .copyright p{
+        font-style: 'Montserrat', sans-serif;
+        width: 100%;
     }
     .social-media-mobile{
         display: flex;
@@ -763,10 +781,5 @@ h4{
     .direction-mobile img:hover{
         border: 1px solid purple;
         cursor: pointer;
-    }
-    h4{
-        display: flex;
-        font-weight: bold;
-        font-size: 1.2rem;
     }
 }
