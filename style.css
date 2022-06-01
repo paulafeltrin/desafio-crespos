@@ -195,7 +195,7 @@ body{
     .img-cabeludo h1{
         width: 40%;
         display: flex;
-        top: 10%;
+        top: 20%;
         left: 10%;
     }
     .img-cabeludo p{
@@ -223,13 +223,14 @@ body{
 @media(max-width: 480px){
     .img-cabeludo h1{
         font-size: 1.5rem;
-        width: 35%;
+        top:40%;
+        width: 90%;
         line-height: 1.3rem;
     }
     .img-cabeludo p{
         font-size: 0.8rem;
-        width: 45%;
-        top: 54%;
+        width: 90%;
+        top: 60%;
     }
 }
 .crespos-text{
@@ -603,9 +604,7 @@ main{
 .gallery-mobile{
     display: none;
 }
-.mobili-row{
-    display: flex;
-}
+
 @media(max-width: 700px){
     .gallery-web{
         display: none;
@@ -617,6 +616,10 @@ main{
         display: flex;
         flex-wrap: wrap;
         padding-bottom: 2vh;
+    }
+    .mobili-row{
+        display: flex;
+        flex-direction: row;
     }
     .gallery-mobile img{
         padding: 1vh 1vw;
