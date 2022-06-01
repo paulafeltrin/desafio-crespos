@@ -280,8 +280,9 @@ body{
         font-size: 1rem;
     }
 }
-main{
+.galery-dicas{
     position: relative;
+    padding: 0 2vw 2vh 2vw;
 }
 .texto-principal{
     background-color: bisque;
@@ -407,11 +408,10 @@ main{
 }
 .img-cacho-fio{
     position: relative;
-    left: 1vw;
+    width: 40%;
     top: 10vh;
-    width: 35vw;
+    left: 6vw;
     height: 15vh;
-    align-items: baseline;
 }
 @media(max-width: 830px){
     .texto-principal{
@@ -422,8 +422,11 @@ main{
         width: 100%;
     }
     .texto-principal img{
-        position: static;
+        width: 70%;
+        position: initial;
         margin: auto;
+        display: flex;
+        justify-content: center;
         top: 0px;
     }
     .texto-principal p{
@@ -535,12 +538,8 @@ main{
         position: static;
     }
     .img-cacho-fio{
-        position: relative;
-        left: 25vw;
+        left: 25%;
         top: 0vh;
-        width: 35vw;
-        padding-top: 30px;
-        align-items: baseline;
     }
 }
 @media(max-width: 770px){
@@ -559,7 +558,7 @@ main{
     margin: 0 auto;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding-bottom: 2vh;
 }
 .gallery-web img{
@@ -633,7 +632,8 @@ main{
         width: 50vw;
     }
     .gallery-gm{
-        width: 90%;
+        width: 100vw;
+        object-fit: contain;
     }
     .gallery-54{
         width: 25vw;
@@ -667,7 +667,7 @@ main{
     display: flex;
     justify-content: space-between;
     color: white;
-    padding: 2vh 4vw;
+    padding: 4vh 6vw;
 }
 .copyright{
     font-style: 'Montserrat', sans-serif;
@@ -704,11 +704,11 @@ main{
     .pg{
         width: 11vw;
     }
+}
+@media(max-width: 700px){
     .pages{
         display: none;
     }
-}
-@media(max-width: 700px){
     .gallery-web{
         display: none;
     }
@@ -728,5 +728,45 @@ main{
     }
     .copyright p{
         font-size: 0.9rem;
+    }
+}
+.footer-mobile{
+    display: none;
+}
+h4{
+    display: none;
+}
+@media(max-width: 700px){
+    .footer-mobile{
+        display: flex;
+        padding: 2vh 0 2vh 0;
+        justify-content: space-around;
+    }
+    .social-media-mobile{
+        display: flex;
+        width: 20vw;
+        justify-content: space-evenly;
+    }
+    .social-media-mobile img:hover{
+        cursor: pointer;
+        border: 1px solid purple;
+    }
+    .direction-mobile{
+        display: flex;
+        width: 20vw;
+        justify-content: space-evenly;
+    }
+    .direction-mobile img{
+        border-radius: 50%;
+        background-color: #9767A9;
+    }
+    .direction-mobile img:hover{
+        border: 1px solid purple;
+        cursor: pointer;
+    }
+    h4{
+        display: flex;
+        font-weight: bold;
+        font-size: 1.2rem;
     }
 }
