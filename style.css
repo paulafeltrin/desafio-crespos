@@ -283,6 +283,10 @@ body{
 .galery-dicas{
     position: relative;
     padding: 0 2vw 2vh 2vw;
+    margin: 0 auto;
+    max-width: 1080px;
+    width: 100%;
+    align-items: center;
 }
 .texto-principal{
     width: 100%;
@@ -393,7 +397,7 @@ body{
 .img-dica-07{
     height: 80vh;
     position: relative;
-    left: 1vw;
+    right: 4vw;
     bottom: 29vh;
     width: 34vw;
 }
@@ -403,7 +407,7 @@ body{
     background-color: #9767A9;
     position: relative;
     bottom: 4vw;
-    left: 10vh;
+    left: 8vh;
 }
 .img-cacho-fio{
     position: relative;
@@ -556,10 +560,15 @@ body{
 }
 .gallery-web{
     margin: 0 auto;
+    max-width: 1080px;
     width: 100%;
+    align-items: center;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 2px solid red;
+    height: 80vh;
     justify-content: center;
-    padding-bottom: 2vh;
 }
 .gallery-web img{
     padding: 1vh 1vw;
@@ -569,12 +578,11 @@ body{
     cursor: pointer;
     transform: scale(1.2);
 }
-
 .gallery-52{
-    width: 20vw;
+    width: 19vw;
 }
 .gallery-gm{
-    width: 20vw;
+    width: 19vw;
 }
 .gallery-54{
     width: 13vw;
@@ -592,7 +600,7 @@ body{
     width: 13vw;
 }
 .gallery-10{
-    width: 20vw;
+    width: 19vw;
 }
 .gallery-12{
     width: 13vw;
@@ -604,22 +612,48 @@ body{
     display: none;
 }
 
-@media(max-width: 700px){
+@media(max-width: 1086px){
+    .gallery-web{
+        height: 70vh;
+    }
+}
+@media(max-width: 943px){
+    .gallery-web{
+        height: 65vh;
+}
+}
+@media(max-width: 870px){
+    .gallery-web{
+        height: 60vh;
+    }
+}
+@media(max-width: 803px){
+    .gallery-web{
+        height: 55vh;
+    }
+}
+@media(max-width: 726px){
+    .gallery-web{
+        height: 50vh;
+    }
+}
+@media(max-width: 704px){
     .gallery-web{
         display: none;
     }
-    .gallery-mobile{
+   .gallery-mobile{
         margin: 0 auto;
-        max-width: 350px;
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        padding-bottom: 2vh;
-    }
-    .mobili-row{
+        align-items: center;
         display: flex;
         flex-direction: row;
-    }
+        flex-wrap: wrap;
+        
+        height: 1000px;
+        justify-content: space-around;
+        max-width: 350px;
+        padding-bottom: 2vh;
+    } 
     .gallery-mobile img{
         padding: 1vh 1vw;
     }
@@ -633,14 +667,14 @@ body{
     }
     .gallery-gm{
         width: 100vw;
-        object-fit: contain;
     }
     .gallery-54{
         width: 25vw;
+        height: 25px;
     }
     .gallery-53{
         width: 25vw;
-        position: absolute;
+        height: 25px;
     }
     .gallery-14{
         width: 50vw;
@@ -737,6 +771,7 @@ footer{
 h4{
     display: none;
 }
+
 @media(max-width: 700px){
     .footer-mobile{
         display: flex;
