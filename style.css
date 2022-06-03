@@ -397,7 +397,7 @@ body{
 .img-dica-07{
     height: 80vh;
     position: relative;
-    right: 4vw;
+    right: 5vw;
     bottom: 29vh;
     width: 34vw;
 }
@@ -411,9 +411,9 @@ body{
 }
 .img-cacho-fio{
     position: relative;
-    width: 35%;
+    width: 25%;
     top: 10vh;
-    left: 6vw;
+    left: 7vw;
     height: 15vh;
 }
 @media(max-width: 830px){
@@ -670,7 +670,7 @@ body{
         width: 50vw;
     }
     .gallery-gm{
-        width: 100vw;
+        width: 100%;
     }
     .gallery-54{
         width: 25vw;
@@ -801,7 +801,7 @@ h4{
     }
     .social-media-mobile{
         display: flex;
-        width: 20vw;
+        width: 30vw;
         justify-content: space-evenly;
     }
     .social-media-mobile img:hover{
@@ -810,7 +810,7 @@ h4{
     }
     .direction-mobile{
         display: flex;
-        width: 20vw;
+        width: 30vw;
         justify-content: space-evenly;
     }
     .direction-mobile img{
